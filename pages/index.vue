@@ -8,7 +8,7 @@
             <h4 class="text-2xl font-semibold">Rauliqbal</h4>
          </div>
       </div>
-      <HeropageTrending />
-      <HeropageNewest />
+      <HeropagePopular />
+      <HeropageRecommended />
    </main>
 </template>
