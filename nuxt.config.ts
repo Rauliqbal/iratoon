@@ -15,6 +15,7 @@ export default defineNuxtConfig({
 
          meta: [{ name: "description", content: "Temukan berbagai macam manga dan komik dengan bahasa Indonesia terbaru." }],
          link: [{ rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Rubik:wght@400;500;600&display=swap" }],
+         script: [{src: "https://unpkg.com/akar-icons-fonts"}]
       },
    },
    modules: ["@vite-pwa/nuxt", "nuxt-swiper"],

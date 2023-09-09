@@ -17,15 +17,10 @@ const { data: manga } = await useFetch(api);
             <h5 class="text-sm text-gray-500">{{ manga.data.author }}</h5>
          </div>
 
-         <div class="flex items-center gap-2 text-gray-500 text-sm mt-1">
-            <h5>{{ manga.data.status }}</h5>
-            ·
-            <h5>{{ manga.data.chapter_list.length }} Chapter</h5>
-         </div>
-
          <div class="grid gap-4 mt-8">
             <DetailpageChapter v-for="manga in manga.data.chapter_list" :key="manga.id" :manga="manga" />
          </div>
+         
       </div>
    </main>
 </template>

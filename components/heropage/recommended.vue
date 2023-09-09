@@ -5,7 +5,7 @@ const { data: mangas } = await useFetch("https://komiku-api.fly.dev/api/comic/re
    <div>
       <h2 class="font-semibold mt-6">Recommended Manga</h2>
       <div class="flex flex-col gap-4 mt-4">
-         <NuxtLink :to="manga.endpoint" class="flex gap-4 p-4 shadow-card rounded-xl bg-white items-center" v-for="manga in mangas.data" :key="manga.id">
+         <NuxtLink :to="manga.endpoint" class="flex gap-4 p-4 shadow-card hover:shadow-xl hover:shadow-black/10 transition duration-300 rounded-xl bg-white items-center" v-for="manga in mangas.data" :key="manga.id">
             <img class="w-20 h-20 object-cover rounded-md" :src="manga.image" :alt="'thumbnail' + manga.title" />
 
             <div>
